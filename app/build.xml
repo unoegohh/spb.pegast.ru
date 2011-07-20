@@ -23,6 +23,8 @@
     <target name="clear-cache">
         <exec executable="${console}" failonerror="true">
             <arg value="cache:clear"/>
+            <arg value="-e"/>
+            <arg value="prod"/>
         </exec>
     </target>
 
