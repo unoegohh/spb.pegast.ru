@@ -45,7 +45,7 @@
   url = git://github.com/sonata-project/BluePrintBundle.git
 [submodule "vendor/bundles/Knp/Bundle/MenuBundle"]
   path = vendor/bundles/Knp/Bundle/MenuBundle
-  url = git://github.com/sonata-project/MenuBundle.git
+  url = git://github.com/knplabs/KnpMenuBundle.git
 [submodule "vendor/bundles/Sonata/AdminBundle"]
   path = vendor/bundles/Sonata/AdminBundle
   url = git://github.com/sonata-project/AdminBundle.git
