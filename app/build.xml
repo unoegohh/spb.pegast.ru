@@ -1,9 +1,20 @@
 <project name="SPB Pegas Touristik Website" default="build" basedir="..">
     <property name="web" location="web"/>
     <property name="console" location="app/console"/>
+    <property name="parameters" location="app/config/parameters.ini"/>
 
-    <target name="build" depends="build-bootstrap,install-assets,clear-cache"/>
+    <target name="build" depends="install-parameters,build-bootstrap,install-assets,clear-cache"/>
 
+    <target name="parameters.check">
+        <condition property="parameter.present">
+            <available file="${parameters}" type="file" />
+        </condition>
+    </target>
+
+    <target name="install-parameters" depends="parameters.check" unless="parameter.present">
+        <copy file="${parameters}.dist" tofile="${parameters}"/>
+    </target>
+	
     <target name="build-bootstrap">
         <exec executable="vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php" failonerror="true">
         </exec>
