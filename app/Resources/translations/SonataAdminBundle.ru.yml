@@ -1,0 +1,11 @@
+group:
+    news: Новости
+    static: Статический контент
+    office: Офисы
+
+fos_user: Пользователи адм. части
+
+link_action_view: Просмотреть
+link_action_edit: Редактировать
+all_elements: Все элементы
+action_edit: Редактировать

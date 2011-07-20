@@ -1,0 +1,20 @@
+{% block offices %}
+<h3>Прямые офисы продаж</h3>
+{#
+Герб
+<img src="/bundles/websitestatic/images/gerb.png" width="143" height="150" alt="" title="" class="gerb"/>
+#}
+
+{% for item in offices %}
+  {% spaceless %}
+    <a href="{{ path('office', {'id': item.id}) }}" class="orange_button">
+      {% if item.name != '' %}
+        {{ item.name }}
+      {% else %}
+        м. {{ item.metroName }}
+      {% endif %}<br>
+      Тел. <span class="tel_code">(812)</span> {{ item.phone }}
+    </a>
+  {% endspaceless %}
+{% endfor %}
+{% endblock %}

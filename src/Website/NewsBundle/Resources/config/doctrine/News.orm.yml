@@ -1,0 +1,26 @@
+Website\NewsBundle\Entity\News:
+  repositoryClass: Website\NewsBundle\Entity\NewsRepository
+  type: entity
+  table: news
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    newsDate:
+      column: news_date
+      type: datetime
+    newsBrief:
+      column: news_brief
+      type: string
+      length: '255'
+    newsText:
+      column: news_text
+      type: text
+    isPublished:
+      column: is_published
+      type: boolean
+      nullable: true
+      default: false
+  lifecycleCallbacks: {  }

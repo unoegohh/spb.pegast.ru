@@ -1,0 +1,63 @@
+[submodule "vendor/symfony"]
+  path = vendor/symfony
+  url = git://github.com/symfony/symfony.git
+[submodule "vendor/doctrine-common"]
+  path = vendor/doctrine-common
+  url = git://github.com/doctrine/common.git
+[submodule "vendor/doctrine-dbal"]
+  path = vendor/doctrine-dbal
+  url = git://github.com/doctrine/dbal.git
+[submodule "vendor/doctrine"]
+  path = vendor/doctrine
+  url = git://github.com/doctrine/doctrine2.git
+[submodule "vendor/monolog"]
+  path = vendor/monolog
+  url = git://github.com/Seldaek/monolog.git
+[submodule "vendor/twig"]
+  path = vendor/twig
+  url = git://github.com/fabpot/Twig.git
+[submodule "vendor/twig-extensions"]
+  path = vendor/twig-extensions
+  url = git://github.com/fabpot/Twig-extensions.git
+[submodule "vendor/metadata"]
+  path = vendor/metadata
+  url = git://github.com/schmittjoh/metadata.git
+[submodule "vendor/swiftmailer"]
+  path = vendor/swiftmailer
+  url = git://github.com/swiftmailer/swiftmailer.git
+[submodule "vendor/bundles/JMS/SecurityExtraBundle"]
+  path = vendor/bundles/JMS/SecurityExtraBundle
+  url = git://github.com/schmittjoh/JMSSecurityExtraBundle.git
+[submodule "vendor/bundles/FOS/UserBundle"]
+  path = vendor/bundles/FOS/UserBundle
+  url = git://github.com/FriendsOfSymfony/FOSUserBundle.git
+[submodule "vendor/bundles/Sonata/jQueryBundle"]
+  path = vendor/bundles/Sonata/jQueryBundle
+  url = git://github.com/sonata-project/jQueryBundle.git
+[submodule "vendor/assetic"]
+  path = vendor/assetic
+  url = git://github.com/kriswallsmith/assetic
+[submodule "vendor/bundles/Symfony/Bundle/AsseticBundle"]
+  path = vendor/bundles/Symfony/Bundle/AsseticBundle
+  url = git://github.com/symfony/AsseticBundle.git
+[submodule "vendor/bundles/Sonata/BluePrintBundle"]
+  path = vendor/bundles/Sonata/BluePrintBundle
+  url = git://github.com/sonata-project/BluePrintBundle.git
+[submodule "vendor/bundles/Knp/Bundle/MenuBundle"]
+  path = vendor/bundles/Knp/Bundle/MenuBundle
+  url = git://github.com/sonata-project/MenuBundle.git
+[submodule "vendor/bundles/Sonata/AdminBundle"]
+  path = vendor/bundles/Sonata/AdminBundle
+  url = git://github.com/sonata-project/AdminBundle.git
+[submodule "vendor/bundles/Sonata/UserBundle"]
+  path = vendor/bundles/Sonata/UserBundle
+  url = git://github.com/sonata-project/UserBundle.git
+[submodule "vendor/bundles/Sensio/Bundle/FrameworkExtraBundle"]
+  path = vendor/bundles/Sensio/Bundle/FrameworkExtraBundle
+  url = git://github.com/sensio/SensioFrameworkExtraBundle.git
+[submodule "vendor/bundles/Sensio/Bundle/DistributionBundle"]
+  path = vendor/bundles/Sensio/Bundle/DistributionBundle
+  url = git://github.com/sensio/SensioDistributionBundle.git
+[submodule "vendor/bundles/Sensio/Bundle/GeneratorBundle"]
+  path = vendor/bundles/Sensio/Bundle/GeneratorBundle
+  url = git://github.com/sensio/SensioGeneratorBundle.git

@@ -1,0 +1,31 @@
+homepage:
+    pattern:  /
+    defaults: { _controller: WebsiteStaticBundle:Static:index }
+
+about:
+    pattern:  /about
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: about }
+
+search:
+    pattern:  /search
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: search }
+
+info:
+    pattern:  /info
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: info }
+
+weather:
+    pattern:  /weather
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: weather }
+
+rate:
+    pattern:  /rate
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: rate }
+
+paycard:
+    pattern:  /paycard
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: paycard }
+
+team:
+    pattern:  /team
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: team }

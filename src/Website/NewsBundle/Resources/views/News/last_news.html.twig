@@ -1,0 +1,11 @@
+{% block last_news %}
+<h3>Новости</h3>
+
+{% for item in news %}
+<div class="date">{{ item.newsDate|date('d.m.Y') }}</div>
+<div class="text">
+  <a href="{{ path('view', {'id': item.id}) }}">{{ item.newsBrief }}</a>
+</div>
+{% endfor %}
+<div class="list_lnk"><a href="{{ path('news') }}">Список всех новостей</a></div>
+{% endblock %}

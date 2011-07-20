@@ -1,0 +1,39 @@
+.samo_container table.std {border-spacing: 15px;width: 48em !important;ruby-align: expression( runtimeStyle.rubyAlign = 'auto',cellSpacing = parseInt(currentStyle['border-spacing']));}
+.samo_container table.std table{width: 100%;}
+.samo_container .npp {color: #E4E4E4;font-size: 1.5em !important;padding-left: 0px;padding-right: 20px;text-align: left !important;}
+#CURRENCY{width: 5em;}
+.samo_container .spin-botton .price{width: 5em !important;}
+.samo_container .ctop {padding: 0px 3px 5px 3px;}
+.samo_container .ctop .l {color: #2b4379;}
+.samo_container .n2 {width: 50%;}
+.samo_container .n3 {width: 50%;}
+.samo_container .n4 td {border-right: 1px solid #e4e4e4;}
+.samo_container .n4 .tdl {border-right: 0px !important;}
+.samo_container .div_hotel_param table tbody td {padding-top: 0px;}
+.samo_container span.fr_place_l, .samo_container span.fr_place_r{background-repeat: no-repeat;background-position: 0px 0px;display: table-cell;height: 14px;width: 21px;}
+.samo_container span.N{background-position: -21px 0%;}
+.samo_container span.R{background-position: -42px 0%;}
+.samo_container table.res th.w42 {width: 42px;}
+.samo_container .price_legend {border-collapse: separate;border-spacing: 3px;margin: auto;}
+.samo_container .stopsale, .samo_container .resultset tr.red_row td{background-color: #FFAFB6 !important;}
+.samo_container .confirm_now, .samo_container .resultset tr.green_row td{background-color: #A8CFAB !important;}
+#agency_search td.price {font-style: italic;color: #666;}
+#agency_search td.active {font-weight: bold;font-style: normal;color: black;}
+#agency_search td.active, #agency_search  td.notactive {cursor: pointer;}
+.samo_container table.res span.fr_place_r {background-image: url('./f_right.gif');}
+.samo_container table.res span.fr_place_l {background-image: url('./f_left.gif');}
+.samo_container .div_hotel_param {width: 100%; clear: both;}
+#hotelsearch { font-size: 11px;}
+#agency_search select.spin { width: 42px;}
+#agency_search .n5 label{display: block;float: left;width: 33%;}
+#agency_search .n5 label input {margin-right: 10px;}
+#resultset div.pager {margin: 10px 0 10 0px;}
+#resultset div.pager span {padding: 0 6px;}
+#resultset div.pager span.page {font-weight: normal;text-decoration: underline;}
+#resultset div.pager span.current_page {font-weight: bold;text-decoration: none;}
+#resultset table.res td.price {padding-right: 17px;}
+#resultset table.res td.bron {background-repeat: no-repeat; background-image: url('./basket.png'); background-position: right center;}
+#child_ages, #child_ages .age {visibility: hidden;}
+#child_ages .age { width: 40px;}
+td.credit, th.credit {text-align: center;}
+td.credit a, td.credit a:hover {text-decoration: none;color: black;font-weight: bold;}  

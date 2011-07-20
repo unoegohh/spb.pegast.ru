@@ -1,0 +1,11 @@
+{% extends "::content.html.twig" %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+<h1>Новости</h1>
+{% for item in news %}
+  <p class="item_news date">{{ item.newsDate|date('d.m.Y') }}</p>
+  <p class="item_news brief"><a href="{{ path('view', {'id': item.id}) }}">{{ item.newsBrief }}</a></p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,30 @@
+#agency_search {
+	margin-top: 0;
+}
+
+.panel {
+	border: none !important;
+	background: #f8f8f8 !important;
+}
+
+#dp-popup {
+    margin-top: -70px !important;
+    width: 150px !important;
+}
+
+table {
+	width: 100%;
+}
+
+#load {
+    background: url('/pict/search_blue.gif');
+    width: 122px;
+    height: 24px;
+    overflow: hide;
+    text-indent: -9999px;
+    border: none;
+}
+
+#load:hover {
+    background: url('/pict/search_orange.gif');
+}

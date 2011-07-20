@@ -1,0 +1,20 @@
+Website\StaticBundle\Entity\Customer:
+  type: entity
+  table: customer
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+  manyToMany:
+    groups:
+      targetEntity: Group
+      joinTable:
+        name: customer_groups
+        joinColumns:
+          customer_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          group_id:
+            referencedColumnName: id

@@ -1,0 +1,42 @@
+admin:
+    label: Статический контент
+    labels:
+        title: Заголовок
+        content: Содержимое
+        route: Маршрут
+#    actions:
+#        delete: Удалить
+    customer:
+        groups:
+            general: Основное
+            groups: Группы
+            management: Управление
+        label: Клиенты
+        labels:
+            id: Номер в БД
+            username: Имя пользователя
+            email: E-mail
+            password: Пароль
+            groups: Группы
+            roles: Роли
+            enabled: Активный
+    group:
+        label: Группа
+        labels:
+            name: Название
+            roles: Роли
+
+link_staticpage_list: Список разделов
+# link_static_create: Создать раздел
+link_staticpage_edit: Редактировать раздел
+link_staticpage_view: Просмотреть раздел
+
+link_customer_list: Список клиентов
+link_customer_create: Регистрация клиента
+link_customer_edit: Редактирование клиента
+link_customer_view: Просмотр данных клиента
+
+link_group_list: Список групп
+link_group_create: Создание группы
+link_group_edit: Редактирование группы
+link_group_view: Просмотр группы

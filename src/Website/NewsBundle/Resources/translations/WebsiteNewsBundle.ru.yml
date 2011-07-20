@@ -1,0 +1,14 @@
+admin:
+    label: Новости
+    labels:
+        newsDate: Дата
+        newsBrief: Краткое описание новости
+        newsText: Текст новости
+        isPublished: Публикация
+    actions:
+        delete: Удалить
+
+link_news_list: Список новостей
+link_news_create: Создать новость
+link_news_edit: Редактировать новость
+link_news_view: Просмотреть новость

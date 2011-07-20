@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="website.office.admin.class">Website\OfficeBundle\Admin\OfficeAdmin</parameter>
+    </parameters>
+
+    <services>
+        <service id="website.office.admin" class="%website.office.admin.class%">
+            <tag name="sonata.admin" manager_type="orm" group="group.office" label="admin.label"/>
+            <argument/>
+            <argument>Website\OfficeBundle\Entity\Office</argument>
+            <argument>WebsiteOfficeBundle:OfficeAdmin</argument>
+        </service>
+    </services>
+</container>

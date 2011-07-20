@@ -1,0 +1,7 @@
+news:
+    pattern:  /
+    defaults: { _controller: WebsiteNewsBundle:News:index }
+
+view:
+    pattern:  /{id}
+    defaults: { _controller: WebsiteNewsBundle:News:view }

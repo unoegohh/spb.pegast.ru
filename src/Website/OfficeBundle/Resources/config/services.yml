@@ -1,0 +1,7 @@
+parameters:
+#    website_office.example.class: Website\OfficeBundle\Example
+
+services:
+#    website_office.example:
+#        class: %website_office.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,11 @@
+office:
+    pattern:  /{id}
+    defaults: { _controller: WebsiteOfficeBundle:Office:view }
+
+short_list:
+    pattern:  /short
+    defaults: { _controller: WebsiteOfficeBundle:Office:shortList }
+
+full_list:
+    pattern:  /
+    defaults: { _controller: WebsiteOfficeBundle:Office:index }

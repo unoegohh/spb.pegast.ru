@@ -1,0 +1,167 @@
+<html>
+<head>
+    <title>Поиск тура</title>
+		<link rel="stylesheet" type="text/css" href="./media/common.css"/>
+        <link rel="stylesheet" type="text/css" href="./media/index.css"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" >
+    </head>
+<body>
+<div class="samo_container">
+    <div class="eraser"></div><div id="agency_search">
+    <table class="std container">
+        <tr>
+            <td colspan="2" class="panel">
+                <table>
+                    <tr>
+
+                        <td width="5%" rowspan="2" class="npp">1</td>
+                        <td width="20%">город отправления</td>
+                        <td width="32%"><select autocomplete="off" name="TOWNFROMINC" id="TOWNFROMINC"><option>Идет загрузка&hellip;</option></select></td>
+                        <td width="11%">тур</td>
+                        <td width="32%"><select autocomplete="off"  name="TOURINC" id="TOURINC"><option>Идет загрузка&hellip;</option></select></td>
+                    </tr>
+
+                    <tr>
+                        <td>страна</td>
+                        <td><select  autocomplete="off" name="STATEINC"  id="STATEINC"><option>Идет загрузка&hellip;</option></select></td>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td width="50%" class="panel n2">
+                <table>
+                    <tr>
+                        <td rowspan="2" class="npp">2</td>
+                        <td width="30%">даты вылета от</td>
+
+                        <td><input  autocomplete="off" type="text" name="CHECKIN_BEG" class="date" id="CHECKIN_BEG" /></td>
+                        <td width="30%">ночей от</td>
+                        <td><select  autocomplete="off" name="NIGHTS_FROM" id="NIGHTS_FROM" class="spin"><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" selected>7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option></select></td>
+
+                    </tr>
+                    <tr>
+                        <td>до</td>
+                        <td><input  autocomplete="off" type="text" class="date" id="CHECKIN_END" name="CHECKIN_END" /></td>
+                        <td style="padding-bottom: 5px;">до</td>
+                        <td><select  autocomplete="off" name="NIGHTS_TILL" id="NIGHTS_TILL" class="spin"><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" selected>7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option></select></td>
+                    </tr>
+                </table>
+            </td>
+            <td class="panel n2">
+                <table>
+                    <tr>
+                        <td width="5%" rowspan="2" class="npp">3</td>
+                        <td width="20%">взрослых</td>
+
+                        <td width="15%"><select  autocomplete="off" name="ADULT" class="spin" id="ADULT"><option  value="1" >1</option><option  value="2" selected>2</option><option  value="3" >3</option><option  value="4" >4</option></select></td>
+                        <td width="60%" style="padding-bottom: 5px;"><span class="currency_label">цена</span>&nbsp;&nbsp;<select  autocomplete="off" id="CURRENCY" name="CURRENCY"></select> от <input  autocomplete="off" type="text" name="PRICE_MIN" value="" class="price" id="PRICE_MIN"></td>
+                    </tr>
+                    <tr>
+                        <td>детей</td>
+
+                        <td><select  autocomplete="off" name="CHILD" id="CHILD" class="spin"><option value="0" selected>0</option><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option></select></td>
+                        <td id="child_ages"><input type="text" maxlength="2" class="age" id="age_1" autocomplete="off" name="AGE1">&nbsp;<input type="text" maxlength="2" class="age" id="age_2" autocomplete="off" name="AGE2">&nbsp;<input maxlength="2"  type="text" class="age" id="age_3" autocomplete="off" name="AGE3"></td>
+                        <td style="padding-bottom: 5px;">до <input  autocomplete="off" type="text" name="PRICE_MAX" value="" class="price" id="PRICE_MAX"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="panel n4">
+                <div class="div_hotel_param">
+                    <table style="clear: both;">
+                        <thead>
+                            <tr>
+
+                                <td class="l tdl">город</td>
+                                <td><label><input type="checkbox" name="TOWNTO_ANY" id="TOWNTO_ANY" checked="checked">любой</label></td>
+                                <td class="l tdl">категория</td>
+                                <td><label><input type="checkbox" name="STARS_ANY" id="STARS_ANY" checked="checked">любая</label></td>
+                                <td class="l tdl">гостиница <input type="text" name="hotelsearch" id="hotelsearch"></td>
+                                <td><label><input type="checkbox" name="HOTELS_ANY" id="HOTELS_ANY" checked="checked">любая</label></td>
+
+                                <td class="l tdl">питание</td>
+                                <td class="tdl"><label><input type="checkbox" name="MEAL_ANY" id="MEAL_ANY" checked="checked">любое</label></td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td width="25%" colspan="2"><div class="checklistbox" id="TOWNTO" name="TOWNTO">Идет загрузка&hellip;</div></td>
+                            <td width="10%" colspan="2"><div class="checklistbox" id="STARS" name="STARS">Идет загрузка&hellip;</div></td>
+
+                            <td width="50%" colspan="2"><div class="checklistbox" id="HOTELS" name="HOTELS">Идет загрузка&hellip;</div></td>
+                            <td width="15%" colspan="2" class="tdl"><div class="checklistbox" id="MEAL" name="MEAL">Идет загрузка&hellip;</div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">&nbsp;</td>
+                            <td><label><input  autocomplete="off" type="checkbox" name="HOTELS_SEL" id="HOTELS_SEL"> показать только выбранные</label></td>
+                            <td>&nbsp;</td>
+
+                            <td class="tdl">&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="r"><button id="load" disabled="disabled">Искать</button></td>
+
+        </tr>
+	<tr>
+ 	    <td style="font-size: 14px;" colspan="2" class="r"><center>Внимание! Просим обращать внимание на <b><a href="http://pegasretail.ru/rus/main/payments" target="_blank">ДОПЛАТЫ>>></a></b></center></td>
+	</tr>
+    </table>
+    <div id="resultset">&nbsp;</div>
+    <table class="price_legend">
+        <tr>
+            <td width="63px"><img src="./media/f_right.gif"  alt=""/><br/></td>
+            <td> - есть места / нет мест / по запросу</td>
+		</tr>
+    </table>
+</div>
+</div>
+<noscript><h1 class="error">Для дальнейшей работы необходимо включить javascript.</h1></noscript>
+<script src="./helpers/lib.js"></script>
+<script type="text/javascript">
+	samo.search_params_defaults = {}; //{TOWNFROMINC: 2, STATEINC: 4, NIGHTS_FROM: 7, NIGHT_TILL: 7, ADULT: 2, CHILD: 0, CURRENCY: 1};
+</script>
+<script src="./helpers/search.js"></script>
+<!--[if IE]><style type="text/css">html{font-size: 101%;} #resultset{background-color: white;}</style><![endif]-->
+<!--[if lte IE 6]><style type="text/css">html { background-attachment: fixed; }</style><![endif]-->
+
+<!--script src="/js/jquery.tooltip.pack.js"></script-->
+<style type="text/css">
+#tooltip {
+ text-align: left;
+        position: absolute;
+        z-index: 3000;
+		background-color:#ffa;
+		border:1px solid #cc9;
+		padding:3px;
+		-moz-box-shadow: 2px 2px 11px #666;
+		-webkit-box-shadow: 2px 2px 11px #666;
+font-weight: normal;
+}
+</style>
+<script type="text/javascript">
+$(function() {
+  var tb = '<span>Покупка тура в рассрочку<br/>в режиме онлайн!<br/>- Решение банка за 15 минут<br/>- Первоначальный взнос - от 0%<br/>- Переплата по кредиту - 0%<br/>Подробности по тел: <b>(495) 781-99-81<br/>круглосуточно</b></span>';
+
+  $('#resultset').ajaxStop(function () {
+    $("#resultset table.res td.credit a").unbind();
+    $("#resultset table.res td.credit a").removeAttr('title');
+    $("#resultset table.res td.credit a").mouseover(function() {
+      $(this).append($('<div/>').attr('id', 'tooltip').html(tb));
+    });
+    $("#resultset table.res td.credit a").mouseout(function() {
+      $('#tooltip').remove();
+    });                 
+  });
+});
+</script>
+
+</body>
+</html>

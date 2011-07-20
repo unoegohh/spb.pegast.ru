@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="website.static.admin.class">Website\StaticBundle\Admin\StaticAdmin</parameter>
+    </parameters>
+
+    <services>
+        <service id="website.static.admin" class="%website.static.admin.class%">
+            <tag name="sonata.admin" manager_type="orm" group="group.static" label="admin.label"/>
+            <argument/>
+            <argument>Website\StaticBundle\Entity\StaticPage</argument>
+            <argument>WebsiteStaticBundle:StaticAdmin</argument>
+        </service>
+    </services>
+</container>

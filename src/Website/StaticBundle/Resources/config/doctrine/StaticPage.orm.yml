@@ -1,0 +1,18 @@
+Website\StaticBundle\Entity\StaticPage:
+  type: entity
+  table: staticpage
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    route:
+      type: string
+      length: '255'
+    title:
+      type: string
+      length: '255'
+    content:
+      type: text
+  lifecycleCallbacks: {  }

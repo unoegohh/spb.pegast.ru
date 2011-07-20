@@ -1,0 +1,7 @@
+parameters:
+#    website_static.example.class: Website\StaticBundle\Example
+
+services:
+#    website_static.example:
+#        class: %website_static.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

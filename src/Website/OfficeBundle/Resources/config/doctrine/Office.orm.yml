@@ -1,0 +1,36 @@
+Website\OfficeBundle\Entity\Office:
+  type: entity
+  table: office
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    name:
+      type: string
+      length: 255
+      nullable: true
+    metro:
+      type: string
+      length: 255
+    phone:
+      type: string
+      length: 30
+    address:
+      type: string
+      length: 255
+    schedule:
+      type: text
+      nullable: true
+    mapX:
+      column: map_x
+      type: string
+      length: 20
+      nullable: true
+    mapY:
+      column: map_y
+      type: string
+      length: 20
+      nullable: true
+  lifecycleCallbacks: {  }

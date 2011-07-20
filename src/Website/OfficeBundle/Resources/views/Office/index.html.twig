@@ -1,0 +1,8 @@
+{% block offices %}
+<h3>Прямые офисы продаж</h3>
+<img src="/bundles/websitestatic/images/gerb.png" width="143" height="150" alt="" title=""/>
+
+{% for item in offices %}
+  <button class="orange" onClick="window.location.href='';">{{ item.metro }}<br>{{ item.phone }}</button>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "::content.html.twig" %}
+
+{% block title %}Новость от {{ item.newsDate|date('d.m.Y') }} - Новости{% endblock %}
+
+{% block content %}
+<h1>Новости</h1>
+<p class="item_news date">{{ item.newsDate|date('d.m.Y') }}</p>
+<p class="item_news brief">{{ item.newsBrief }}</p>
+<p class="item_news brief">{{ item.newsText|raw }}</p>
+{% endblock %}

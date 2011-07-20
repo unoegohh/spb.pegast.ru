@@ -1,0 +1,17 @@
+admin:
+    label: Офисы
+    labels:
+        name: Название
+        metro: Станция метро
+        phone: Телефон
+        address: Адрес
+        schedule: Режим работы
+    actions:
+        title: Операции
+        edit: Редактировать
+        delete: Удалить
+
+link_office_list: Список офисов
+link_office_create: Создать офис
+link_office_edit: Редактировать офис
+link_office_view: Просмотреть офис

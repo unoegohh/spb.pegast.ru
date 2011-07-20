@@ -1,0 +1,7 @@
+{% block menu %}
+  <ul>
+  {% for item in menu.children %}
+    <li><a href="{{ item.uri }}">{{ item.name }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
