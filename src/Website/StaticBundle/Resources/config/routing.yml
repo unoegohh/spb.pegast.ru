@@ -11,7 +11,8 @@ search:
 # travel planner
 travel_planner:
     pattern:  /travel-planner
-    defaults: { _controller: WebsiteStaticBundle:Static:travelPlanner }
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: travel-planner }
+#:travelPlanner }
 
 # about company
 about:
