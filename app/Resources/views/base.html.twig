@@ -62,16 +62,13 @@
           {% block last_news %}{% render "WebsiteNewsBundle:News:last" with {'quantity': 3} %}{% endblock %}
         </div>
         <!-- END: news -->
-        <a href="{{ path('paycard') }}" class="blue_button">
+        <div class="blue_button">
           <span class="paycard">
             <i class="card_mc"></i>
             <i class="card_visa"></i>
             <span>Оплата картами</span>
           </span>
-        </a>
-        {#
-        <button class="blue" onClick="window.location.href='{{ path('paycard') }}';">Оплата картами</button>
-        #}
+        </div>
       </div>
       <div class="grid_6 pt15">
         <!-- START: main content -->

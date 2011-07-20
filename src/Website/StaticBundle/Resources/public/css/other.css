@@ -8,7 +8,8 @@ body {
 }
 
 /* anchors like big buttons */
-a.blue_button {
+a.blue_button,
+div.blue_button {
   display: block;
   width: 237px;
   height: 40px;
@@ -21,7 +22,7 @@ a.blue_button {
   text-decoration: none;
 }
 
-a.blue_button span.paycard {
+div.blue_button span.paycard {
   display: inline-block;
   position: relative;
   padding: 0 37px 0 43px;

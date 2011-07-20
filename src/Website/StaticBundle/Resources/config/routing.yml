@@ -1,31 +1,34 @@
+# site main page
 homepage:
     pattern:  /
     defaults: { _controller: WebsiteStaticBundle:Static:index }
 
+# tour search
+search:
+    pattern:  /search
+    defaults: { _controller: WebsiteStaticBundle:Static:search }
+
+# travel planner
+travel_planner:
+    pattern:  /travel-planner
+    defaults: { _controller: WebsiteStaticBundle:Static:travelPlanner }
+
+# about company
 about:
     pattern:  /about
     defaults: { _controller: WebsiteStaticBundle:Static:static, name: about }
 
-search:
-    pattern:  /search
-    defaults: { _controller: WebsiteStaticBundle:Static:static, name: search }
-
+# useful info
 info:
     pattern:  /info
     defaults: { _controller: WebsiteStaticBundle:Static:static, name: info }
 
+# weather@resorts
 weather:
     pattern:  /weather
     defaults: { _controller: WebsiteStaticBundle:Static:static, name: weather }
 
-rate:
-    pattern:  /rate
-    defaults: { _controller: WebsiteStaticBundle:Static:static, name: rate }
-
-paycard:
-    pattern:  /paycard
-    defaults: { _controller: WebsiteStaticBundle:Static:static, name: paycard }
-
+# our team
 team:
     pattern:  /team
     defaults: { _controller: WebsiteStaticBundle:Static:static, name: team }

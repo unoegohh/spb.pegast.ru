@@ -25,13 +25,16 @@ class StaticController extends Controller
     }
   }
 
+  public function searchAction() {
+    return $this->render("WebsiteStaticBundle:Static:search.html.twig", array('query_string' => $this->getRequest()->server->get('QUERY_STRING')));
+  }
+
   public function menuAction($return_response = false) {
     $menu = new MenuItem('My menu');
     $menu->addChild('О компании', $this->generateUrl('about'));
-    $menu->addChild('Подбор тура', $this->generateUrl('search'));
+    $menu->addChild('Подбор тура', $this->generateUrl('travel_planner'));
     $menu->addChild('Полезная информация', $this->generateUrl('info'));
     $menu->addChild('Погода на курортах', $this->generateUrl('weather'));
-    $menu->addChild('Курс оплаты', $this->generateUrl('rate'));
     return $this->render('WebsiteStaticBundle:Static:menu.html.twig', array('menu' => $menu->toArray()));
   }
 }
