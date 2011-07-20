@@ -1,9 +1,9 @@
 [parameters]
     database_driver="pdo_mysql"
     database_host="localhost"
-    database_name="spb_db"
-    database_user="spb_user"
-    database_password="spb_password"
+    database_name=
+    database_user=
+    database_password=
 
     mailer_transport="smtp"
     mailer_host="localhost"
@@ -12,6 +12,6 @@
 
     locale="ru"
 
-    secret="93db538630399416b87a8c21391596641a58d1c8"
+    secret=
 
     google_maps_api_key="ABQIAAAA6zdkkrf1O_M1nLgQnpyn-RRSTOoN6KZtHFcNg8gxFhX4HJtrgxTziKD3POVBoG0N2X21kRx9JgGiyA"
