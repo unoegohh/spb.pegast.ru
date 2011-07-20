@@ -2,7 +2,12 @@
     <property name="web" location="web"/>
     <property name="console" location="app/console"/>
 
-    <target name="build" depends="install-assets,clear-cache"/>
+    <target name="build" depends="build-bootstrap,install-assets,clear-cache"/>
+
+    <target name="build-bootstrap">
+        <exec executable="vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php" failonerror="true">
+        </exec>
+    </target>
 
     <target name="clear-cache">
         <exec executable="${console}" failonerror="true">
