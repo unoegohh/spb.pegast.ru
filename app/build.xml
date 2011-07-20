@@ -1,0 +1,20 @@
+<project name="SPB Pegas Touristik Website" default="build" basedir="..">
+    <property name="web" location="web"/>
+    <property name="console" location="app/console"/>
+
+    <target name="build" depends="install-assets,clear-cache"/>
+
+    <target name="clear-cache">
+        <exec executable="${console}" failonerror="true">
+            <arg value="cache:clear"/>
+        </exec>
+    </target>
+
+    <target name="install-assets">
+        <exec executable="${console}" failonerror="true">
+            <arg value="assets:install"/>
+            <arg value="--symlink"/>
+            <arg value="${web}"/>
+        </exec>
+    </target>
+</project>
