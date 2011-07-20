@@ -16,7 +16,7 @@ table {
 	width: 100%;
 }
 
-#load {
+/*#load {
     background: url('/pict/search_blue.gif');
     width: 122px;
     height: 24px;
@@ -27,4 +27,4 @@ table {
 
 #load:hover {
     background: url('/pict/search_orange.gif');
-}
+}*/
