@@ -1,12 +1,5 @@
 {% extends "::content.html.twig" %}
 
-{% block javascripts %}
-<script type="text/javascript">
-  var search_page_url = "{{ path('search') }}";
-</script>
-<script type="text/javascript" src="/bundles/websitestatic/js/search_page_url.js"></script>
-{% endblock %}
-
 {% block title %}Главная страница{% endblock %}
 
 {% block content %}
@@ -19,9 +12,7 @@
     <div class="shapka_orange">Поиск и заказ тура</div>
     <div class="corner orange_title_right">&nbsp;</div>
     <a href="/files/help.doc">Помощь</a><br class="clr"/>
-<!--    <div class="orange">-->
-      <iframe src="http://pegasretail.ru/franchise/spb.pegast.ru/fast.php" width="507" height="203" scrolling="no" frameborder="0"></iframe>
-<!--    </div> -->
+    <iframe src="http://pegasretail.ru/franchise/spb.pegast.ru/fast.php" width="507" height="203" scrolling="no" frameborder="0"></iframe>
   </div>
   <img src="/bundles/websitestatic/images/picture.jpg" width="507" height="718"/>
 </div>
