@@ -426,5 +426,6 @@ div.office img.gerb {
 div#map {
   width: 585px;
   height: 550px;
-  margin-top: 15px;
+  margin: 10px 0;
+  padding-bottom:
 }
