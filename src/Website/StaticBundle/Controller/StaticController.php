@@ -43,7 +43,7 @@ class StaticController extends Controller
     $rate = null;
     $sourceURL = 'http://pegast.ru/samo5/currency';
     $expirationPeriod = 60 * 60;
-    $cacheFile = $this->get('kernel')->getCacheDir() . '/external/currency.cache';
+    $cacheFile = $this->get('kernel')->getCacheDir() . '/currency';
 
     if (
       !is_file($cacheFile) ||
