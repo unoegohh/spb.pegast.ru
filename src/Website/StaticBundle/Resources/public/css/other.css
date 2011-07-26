@@ -409,11 +409,6 @@ div.search {
   margin: 15px 34px 5px;
 }
 
-/*div.orange {
-  border: 1px solid #f18e53;
-  clear: both;
-}*/
-
 /* offices */
 div.office {
   text-align: center;
@@ -427,5 +422,10 @@ div#map {
   width: 585px;
   height: 550px;
   margin: 10px 0;
-  padding-bottom:
+}
+
+table#currency {
+  margin: 30px 30px 0;
+  width: 100%;
+  border: 1px solid white;
 }

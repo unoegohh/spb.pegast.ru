@@ -63,6 +63,10 @@
             {% block last_news %}{% render "WebsiteNewsBundle:News:last" with {'quantity': 3} %}{% endblock %}
           </div>
           <!-- END: news -->
+          <!-- START: currancy rate -->
+            {% render "WebsiteStaticBundle:Static:currencyRate" %}
+          <!-- END: currancy rate -->
+          <!-- START: paycard -->
           <div class="blue_button">
             <span class="paycard">
               <i class="card_mc"></i>
@@ -70,6 +74,7 @@
               <span>Оплата картами</span>
             </span>
           </div>
+          <!-- END: paycard -->
         </div>
         <div class="grid_9 alpha omega white">
           {% block central_content %}
