@@ -3,7 +3,6 @@
 namespace Website\StaticBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Bundle\FrameworkBundle\Routing\Router;
 use Symfony\Component\HttpFoundation\Response;
 use Knp\Bundle\MenuBundle\MenuItem;
 
@@ -48,7 +47,7 @@ class StaticController extends Controller
     if (
       !is_file($cacheFile) ||
       (
-       time() - filectime($cacheFile) >= $expirationPeriod &&
+       time() - filemtime($cacheFile) >= $expirationPeriod &&
        $rate = @file_get_contents($sourceURL)
       )
     ) {
