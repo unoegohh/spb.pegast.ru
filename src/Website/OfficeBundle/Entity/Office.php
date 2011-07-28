@@ -198,4 +198,14 @@ class Office
     {
         return $this->schedule;
     }
+
+    public function __toString() {
+      if ($this->name != '') {
+        return $this->name;
+      }
+      else {
+        $metroArray = preg_split('/,\s*/', $this->metro);
+        return $metroArray[0];
+      }
+    }
 }

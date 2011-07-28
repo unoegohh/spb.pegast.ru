@@ -1,374 +1,449 @@
-/*
-	Variable Grid System.
-	Learn more ~ http://www.spry-soft.com/grids/
-	Based on 960 Grid System - http://960.gs/
-
-	Licensed under GPL and MIT.
-*/
-
-/*
-  Forces backgrounds to span full width,
-  even if there is horizontal scrolling.
-  Increase this if your layout is wider.
-
-  Note: IE6 works fine without this fix.
-*/
-
+/* common styles */
 body {
-  min-width: 1200px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Tahoma;
+  font-size: 12px;
+  text-decoration: none;
 }
 
-/* Containers
-----------------------------------------------------------------------------------------------------*/
-.container_12 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
+a.orange_button span.tel_code {
+  font-size: 80%;
 }
 
-/* Grid >> Global
-----------------------------------------------------------------------------------------------------*/
-
-
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-	display:inline;
-	float: left;
-	position: relative;
-	margin-left: 8px;
-	margin-right: 7px;
-}
-
-
-
-.push_1, .pull_1,
-.push_2, .pull_2,
-.push_3, .pull_3,
-.push_4, .pull_4,
-.push_5, .pull_5,
-.push_6, .pull_6,
-.push_7, .pull_7,
-.push_8, .pull_8,
-.push_9, .pull_9,
-.push_10, .pull_10,
-.push_11, .pull_11,
-.push_12, .pull_12 {
-	position:relative;
-}
-
-
-/* Grid >> Children (Alpha ~ First, Omega ~ Last)
-----------------------------------------------------------------------------------------------------*/
-
-.alpha {
-	margin-left: 0;
-}
-
-.omega {
-	margin-right: 0;
-}
-
-/* Grid >> 12 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_12 .grid_1 {
-	width:85px;
-}
-
-.container_12 .grid_2 {
-	width:185px;
-}
-
-.container_12 .grid_3 {
-	width:285px;
-}
-
-.container_12 .grid_4 {
-	width:385px;
-}
-
-.container_12 .grid_5 {
-	width:485px;
-}
-
-.container_12 .grid_6 {
-	width:585px;
-}
-
-.container_12 .grid_7 {
-	width:685px;
-}
-
-.container_12 .grid_8 {
-	width:785px;
-}
-
-.container_12 .grid_9 {
-	width:885px;
-}
-
-.container_12 .grid_10 {
-	width:985px;
-}
-
-.container_12 .grid_11 {
-	width:1085px;
-}
-
-.container_12 .grid_12 {
-	width:1185px;
-}
-
-
-
-
-/* Prefix Extra Space >> 12 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_12 .prefix_1 {
-	padding-left:100px;
-}
-
-.container_12 .prefix_2 {
-	padding-left:200px;
-}
-
-.container_12 .prefix_3 {
-	padding-left:300px;
-}
-
-.container_12 .prefix_4 {
-	padding-left:400px;
-}
-
-.container_12 .prefix_5 {
-	padding-left:500px;
-}
-
-.container_12 .prefix_6 {
-	padding-left:600px;
-}
-
-.container_12 .prefix_7 {
-	padding-left:700px;
-}
-
-.container_12 .prefix_8 {
-	padding-left:800px;
-}
-
-.container_12 .prefix_9 {
-	padding-left:900px;
-}
-
-.container_12 .prefix_10 {
-	padding-left:1000px;
-}
-
-.container_12 .prefix_11 {
-	padding-left:1100px;
-}
-
-
-
-/* Suffix Extra Space >> 12 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_12 .suffix_1 {
-	padding-right:100px;
-}
-
-.container_12 .suffix_2 {
-	padding-right:200px;
-}
-
-.container_12 .suffix_3 {
-	padding-right:300px;
-}
-
-.container_12 .suffix_4 {
-	padding-right:400px;
-}
-
-.container_12 .suffix_5 {
-	padding-right:500px;
-}
-
-.container_12 .suffix_6 {
-	padding-right:600px;
-}
-
-.container_12 .suffix_7 {
-	padding-right:700px;
-}
-
-.container_12 .suffix_8 {
-	padding-right:800px;
-}
-
-.container_12 .suffix_9 {
-	padding-right:900px;
-}
-
-.container_12 .suffix_10 {
-	padding-right:1000px;
-}
-
-.container_12 .suffix_11 {
-	padding-right:1100px;
-}
-
-
-
-/* Push Space >> 12 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_12 .push_1 {
-	left:100px;
-}
-
-.container_12 .push_2 {
-	left:200px;
-}
-
-.container_12 .push_3 {
-	left:300px;
-}
-
-.container_12 .push_4 {
-	left:400px;
-}
-
-.container_12 .push_5 {
-	left:500px;
-}
-
-.container_12 .push_6 {
-	left:600px;
-}
-
-.container_12 .push_7 {
-	left:700px;
-}
-
-.container_12 .push_8 {
-	left:800px;
-}
-
-.container_12 .push_9 {
-	left:900px;
-}
-
-.container_12 .push_10 {
-	left:1000px;
-}
-
-.container_12 .push_11 {
-	left:1100px;
-}
-
-
-
-/* Pull Space >> 12 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_12 .pull_1 {
-	left:-100px;
-}
-
-.container_12 .pull_2 {
-	left:-200px;
-}
-
-.container_12 .pull_3 {
-	left:-300px;
-}
-
-.container_12 .pull_4 {
-	left:-400px;
-}
-
-.container_12 .pull_5 {
-	left:-500px;
-}
-
-.container_12 .pull_6 {
-	left:-600px;
-}
-
-.container_12 .pull_7 {
-	left:-700px;
-}
-
-.container_12 .pull_8 {
-	left:-800px;
-}
-
-.container_12 .pull_9 {
-	left:-900px;
-}
-
-.container_12 .pull_10 {
-	left:-1000px;
-}
-
-.container_12 .pull_11 {
-	left:-1100px;
-}
-
-
-
-
-/* `Clear Floated Elements
-----------------------------------------------------------------------------------------------------*/
-
-/* http://sonspring.com/journal/clearing-floats */
-
-.clear {
-  clear: both;
+a.doc {
   display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  padding-left: 19px;
+  background: url('/bundles/websitestatic/images/docicon.gif') no-repeat scroll 0 0 transparent;
 }
 
-/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
-
-.clearfix:before,
-.clearfix:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+img {
+  border: none;
 }
 
-.clearfix:after {
+img.m24 {
+  margin: 24px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.ml130 {
+  margin-left: 130px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.clr {
   clear: both;
 }
 
-/*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
+.hidden {
+  display: none;
+}
 
-.clearfix {
-  zoom: 1;
+/* anchors&divs like big buttons */
+a.blue_button,
+div.blue_button {
+  display: block;
+  width: 237px;
+  height: 40px;
+  margin: 40px auto;
+  padding-top: 15px;
+  background: url('/bundles/websitestatic/images/p_blue.png') no-repeat scroll 0 0 transparent;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a.orange_button {
+  display: block;
+  width: 210px;
+  height: 56px;
+  margin: 10px auto;
+  padding-top: 9px;
+  padding-left: 25px;
+  background: url('/bundles/websitestatic/images/p_orange.png') no-repeat scroll 0 0 transparent;
+  text-align: left;
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* credit card icons */
+div.blue_button span.paycard {
+  display: inline-block;
+  position: relative;
+  padding: 0 37px 0 43px;
+  width: 157px;
+}
+
+i.card_mc {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 7px;
+  width: 42px;
+  height: 25px;
+  background: url('/bundles/websitestatic/images/card_mc.png') no-repeat scroll 0 0 transparent;
+}
+
+i.card_visa {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 6px;
+  width: 37px;
+  height: 23px;
+  background: url('/bundles/websitestatic/images/card_visa.png') no-repeat scroll 0 0 transparent;
+}
+
+/* header */
+.header {
+  padding-top: 5px;
+  height: 87px;
+}
+
+.header img {
+  margin-top: 7px;
+}
+
+.header_bg {
+  background: url('/bundles/websitestatic/images/header.jpg') right top no-repeat;
+}
+
+.header .labels {
+  margin-right: -5px;
+  color: #000065;
+  text-align: right;
+  font-size: 12px;
+}
+
+.header .labels_data {
+  color: #000065;
+  font-weight: bold;
+}
+
+div.labels div,
+div.labels_data div {
+  height: 16px;
+}
+
+div.labels div.common {
+  line-height: 18px;
+}
+
+.header .labels_data div.phone_common {
+  font-size: 13px;
+}
+
+.header div.phone_piter {
+  height: 21px;
+  font-size: 16px;
+}
+
+.header .labels_data a {
+  text-decoration: none;
+  color: #000065;
+  font-weight: bold;
+}
+
+.header .labels_data a:hover {
+  color: #f00000;
+}
+
+.shapka {
+  margin: 0 !important;
+  width: 1153px !important;
+  height: 16px;
+  background-color: #f18e54;
+}
+
+.shapka_blue {
+  margin: 0 !important;
+  width: 500px !important;
+  height: 21px;
+  padding-left: 15px;
+  background-color: #53bde4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.shapka_orange {
+  float: left;
+  margin: 0 !important;
+  width: 130px;
+  height: 23px;
+  background-color: #f18e53;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 22px;
+}
+
+/* footer */
+div.footer {
+  padding: 5px 0;
+  color: #ffffff;
+}
+
+div.footer span.data {
+  font-weight: bold;
+}
+
+div.footer a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+div.footer a:hover {
+  color: #f00000;
+}
+
+/* corners */
+.corner {
+  margin: 0 !important;
+  width: 16px !important;
+  height: 16px;
+}
+
+.orange_left {
+  height: 16px;
+  background: url('/bundles/websitestatic/images/corner_orange_left.png') left top no-repeat;
+}
+
+.orange_right {
+  height: 16px;
+  background: url('/bundles/websitestatic/images/corner_orange_right.png') right top no-repeat;
+}
+
+.orange_title_left {
+  float: left;
+  width: 23px !important;
+  height: 23px;
+  margin-left: 39px;
+  background: url('/bundles/websitestatic/images/corner_orange1_left.png') left top no-repeat;
+}
+
+.orange_title_right {
+  float: left;
+  width: 23px !important;
+  height: 23px;
+  background: url('/bundles/websitestatic/images/corner_orange1_right.png') right top no-repeat;
+}
+
+.blue_left {
+  width: 31px !important;
+  height: 21px;
+  background: url('/bundles/websitestatic/images/corner_blue_left.png') left top no-repeat;
+}
+
+.blue_right {
+  width: 31px !important;
+  height: 21px;
+  background: url('/bundles/websitestatic/images/corner_blue_right.png') right top no-repeat;
+}
+
+/* background colors */
+.white {
+  background-color: #ffffff;
+}
+
+.blue {
+  background-color: #000066;
+}
+
+.sky {
+  background-color: #53bde4;
+}
+
+.green {
+  background-color: #019966;
+}
+
+/* lines */
+.line1px {
+  height: 1px;
+}
+
+.line3px {
+  height: 3px;
+}
+
+/* menu */
+div.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+}
+
+div.menu ul li {
+  background: url("/bundles/websitestatic/images/bullet.png") no-repeat scroll left center transparent;
+  border-bottom: 1px solid #FFFFFF;
+  margin-top: 5px;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+div.menu ul li a {
+  color: #14268C;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* last news under menu */
+div.news {
+  color: #474864;
+  padding: 0 30px;
+}
+
+div.news h3 {
+  font-size: 16px;
+  color: #395384;
+  margin-bottom: 0;
+}
+
+div.news div.date {
+  color: #1c2582;
+  padding: 28px 0 0;
+}
+
+div.news div.text {
+  padding: 11px 0 0;
+}
+
+div.news div.text a {
+  color: #474864;
+  text-decoration: none;
+}
+
+div.news div.text a:hover {
+  color: #f00000;
+  text-decoration: underline;
+}
+
+div.news div.list_lnk {
+  padding: 28px 0 0;
+  text-align: right;
+}
+
+div.news div.list_lnk a {
+  color: #192a84;
+}
+
+div.news div.list_lnk a:visited {
+  color: #192a84;
+}
+
+p.item_news .date {
+  margin: 20px 0 0;
+}
+
+p.item_news .brief {
+  margin: 10px 0 0;
+}
+
+p.item_news a {
+  color: #000000;
+  text-decoration: none;
+}
+
+p.item_news a:hover {
+  color: #f00000;
+  text-decoration: underline;
+}
+
+/* content */
+div.content_main {
+  width: 577px !important;
+  padding-top: 8px;
+  padding-left: 8px;
+}
+
+div.content {
+  width: 575px !important;
+  border: 1px solid #53bde4;
+  border-top: none;
+  border-bottom: none;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+div.content a {
+  float: right;
+  margin: 4px 0 0;
+  color: #983202;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+div.content a:hover {
+  color: #983202;
+}
+
+div.content a:visited {
+  color: #983202;
+}
+
+div.search {
+  width: 507px;
+  margin: 15px 34px 5px;
+}
+
+/* offices */
+div.office {
+  text-align: center;
+}
+
+div.office img.gerb {
+  margin-bottom: 10px;
+}
+
+div#map {
+  width: 585px;
+  height: 550px;
+  margin: 10px 0;
+}
+
+div.currency {
+  padding: 30px 30px 0;
+}
+
+table#currency {
+  width: 100%;
+  border-collapse: collapse;
+/*  border: 1px solid #53BDE4;*/
+}
+
+table#currency th,
+table#currency td {
+  width: 40%;
+  padding: 3px;
+  border: 1px solid white;
+  text-align: center;
+}
+
+table#currency td {
+  width: 30%;
+  color: #f0f0f0;
+  text-shadow: black 1px 1px 0;
 }

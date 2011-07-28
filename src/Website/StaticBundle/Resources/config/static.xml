@@ -6,6 +6,13 @@
 
     <parameters>
         <parameter key="website.static.admin.class">Website\StaticBundle\Admin\StaticAdmin</parameter>
+        <parameter key="website.static.travel_planner.send_mail.subject">Запрос на подбор тура</parameter>
+        <parameter key="website.static.travel_planner.send_mail.sender.email">travel-planner@spb.pegast.ru</parameter>
+        <parameter key="website.static.travel_planner.send_mail.sender.name">Форма подбора тура</parameter>
+        <parameter key="website.static.travel_planner.send_mail.recipient.email">spb.sale@pegast.ru</parameter>
+        <!--
+        <parameter key="website.static.travel_planner.send_mail.recipient.email">a.kondratenko@pegast.ru</parameter>
+        -->
     </parameters>
 
     <services>

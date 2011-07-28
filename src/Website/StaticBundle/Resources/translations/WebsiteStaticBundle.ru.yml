@@ -40,3 +40,28 @@ link_group_list: Список групп
 link_group_create: Создание группы
 link_group_edit: Редактирование группы
 link_group_view: Просмотр группы
+
+
+travel_planner:
+  choices:
+    city: "{0} другой|{1} Санкт-Петербург|{2} Москва"
+  labels:
+    city: Город отправления
+    cityOther: введите название города
+    country: Страна
+    resort: Курорт
+    hotelLevel: Уровень отеля
+    hotelName: Название отеля
+    meal: Питание
+    departureMin: Вылет от
+    departureMax: Вылет до
+    returnTo: Вернуться до
+    nightsMin: Ночей от
+    nightsMax: Ночей до
+    adult: Взрослых
+    children: Детей
+    office: Удобный Вам офис
+    name: Ваше имя
+    phone: Телефон
+    email: E-mail
+    wishes: Пожелания

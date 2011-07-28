@@ -1,0 +1,95 @@
+{% block content %}
+  Запрос на подбор тура содержит следующие данные.
+  <p>
+    <table>
+{% if data.city is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.city" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{% if data.city == 0 %}{{ data.cityOther }}{% else %}{{ "travel_planner.choices.city" | transchoice(data.city, {}, "WebsiteStaticBundle") }}{% endif %}</td>
+      </tr>
+{% endif %}
+{% if data.country is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.country" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.country }}</td>
+      </tr>
+{% endif %}
+{% if data.resort is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.resort" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.resort }}</td>
+      </tr>
+{% endif %}
+{% if data.hotelLevel is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.hotelLevel" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.hotelLevel }}</td>
+      </tr>
+{% endif %}
+{% if data.hotelName is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.hotelName" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.hotelName }}</td>
+      </tr>
+{% endif %}
+{% if data.meal is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.meal" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.meal }}</td>
+      </tr>
+{% endif %}
+      <tr>
+        <td>{{ "travel_planner.labels.departureMin" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.departureMin|date("d.m.Y") }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.departureMax" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.departureMax|date("d.m.Y") }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.returnTo" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.returnTo|date("d.m.Y") }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.nightsMin" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.nightsMin }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.nightsMax" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.nightsMax }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.adult" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.adult }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.children" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.children }}</td>
+      </tr>
+{% if data.office is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.office" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.office }}</td>
+      </tr>
+{% endif %}
+      <tr>
+        <td>{{ "travel_planner.labels.name" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.name }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.phone" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.phone }}</td>
+      </tr>
+      <tr>
+        <td>{{ "travel_planner.labels.email" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td><a href="mailto:{{ data.email }}">{{ data.email }}</a></td>
+      </tr>
+{% if data.wishes is not empty %}
+      <tr>
+        <td>{{ "travel_planner.labels.wishes" | trans({}, "WebsiteStaticBundle") }}</td>
+        <td>{{ data.wishes }}</td>
+      </tr>
+{% endif %}
+    </table>
+  </p>
+{% endblock %}

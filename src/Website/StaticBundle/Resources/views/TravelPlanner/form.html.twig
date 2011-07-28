@@ -1,0 +1,76 @@
+{% extends "::base.html.twig" %}
+
+{% block javascripts %}
+<script type="text/javascript">
+  $(function() {
+    $('.datepicker').datepicker({
+      minDate: new Date(),
+      dateFormat: 'dd.mm.yy'
+    });
+
+    $('select.city').change(function() {
+      if ($(this).val() == '0') {
+        $('div#otherLabel').show();
+        $('input#other').attr('disabled', false).focus();
+      }
+      else {
+        $('div#otherLabel').hide();
+        $('input#other').attr('disabled', 'disabled');
+        $(this).focus();
+      }
+    });
+  });
+</script>
+{% endblock %}
+
+{% block title %}Подбор тура{% endblock %}
+
+{% form_theme form _self %}
+
+{% block _travel_planner_cityOther_row %}
+  <div id="otherLabel" class="hidden">
+    {{ label }}<br/>
+    <input id="other" type="text" name="{{ full_name }}" value="{{ value }}" disabled="disabled" />
+  </div>
+{% endblock %}
+
+{% block field_row %}
+{% spaceless %}
+  <div>
+    {{ form_label(form, label) }}
+    {{ form_widget(form, {'attr': attr}) }}
+    {{ form_errors(form) }}
+  </div>
+{% endspaceless %}
+{% endblock field_row %}
+
+{% block content %}
+  <h1>Подбор тура</h1>
+  {% if sended is not empty %}<span class="flash">Ваш запрос получен и в скором времени будет обработан.</span>{% endif %}
+  <form id="plannerForm" action="{{ path('travel_planner_submit') }}" method="POST" {{ form_enctype(form) }}>
+      {{ form_errors(form) }}
+
+      {{ form_row(form.city, { 'attr': {'class': 'city'} }) }}
+      {{ form_row(form.cityOther) }}
+      {{ form_row(form.country) }}
+      {{ form_row(form.resort) }}
+      {{ form_row(form.hotelLevel) }}
+      {{ form_row(form.hotelName) }}
+      {{ form_row(form.meal) }}
+      {{ form_row(form.departureMin, { 'attr': {'class': 'datepicker'} }) }}
+      {{ form_row(form.departureMax, { 'attr': {'class': 'datepicker'} }) }}
+      {{ form_row(form.returnTo, { 'attr': {'class': 'datepicker'} }) }}
+      {{ form_row(form.nightsMin, { 'attr': {'class': 'min'} }) }}
+      {{ form_row(form.nightsMax, { 'attr': {'class': 'min'} }) }}
+      {{ form_row(form.adult, { 'attr': {'class': 'min'} }) }}
+      {{ form_row(form.children, { 'attr': {'class': 'min'} }) }}
+      {{ form_row(form.office) }}
+      {{ form_row(form.name) }}
+      {{ form_row(form.phone) }}
+      {{ form_row(form.email) }}
+      {{ form_row(form.wishes) }}
+
+      {{ form_rest(form) }}
+      <input type="submit" value="Отправить"/>
+  </form>
+{% endblock %}

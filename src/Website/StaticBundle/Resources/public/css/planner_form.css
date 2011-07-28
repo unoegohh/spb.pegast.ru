@@ -1,0 +1,51 @@
+span.flash {
+  margin: 0;
+  color: #f00000;
+  font-weight: bold;
+}
+
+form#plannerForm {
+  margin: 10px 0;
+}
+
+form#plannerForm div {
+  clear: both;
+}
+
+form#plannerForm label {
+  display: block;
+  float: left;
+  width: 200px;
+  margin: 5px 0;
+  vertical-align: top;
+}
+
+form#plannerForm input,
+form#plannerForm select,
+form#plannerForm textarea {
+  width: 200px;
+}
+
+form#plannerForm input[type=submit] {
+  margin-left: 200px;
+}
+
+form#plannerForm select.min {
+  width: 35px;
+}
+
+form#plannerForm textarea {
+  height: 100px;
+}
+
+form#plannerForm .datepicker {
+  width: 75px;
+}
+
+form#plannerForm div#otherLabel {
+  margin-left: 200px;
+}
+
+form#plannerForm input#other {
+  margin-bottom: 5px;
+}
