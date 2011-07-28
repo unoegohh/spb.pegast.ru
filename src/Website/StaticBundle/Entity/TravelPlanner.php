@@ -383,13 +383,16 @@ class TravelPlanner
      * @param type $subject
      * @param type $body
      */
-    public function sendEmail(ContainerInterface $container, $sender, $recipient, $subject, $body) {
+    public function sendEmail(ContainerInterface $container, $sender, $recipient, $bcc = '', $subject, $body) {
       $mailer = $container->get('mailer');
       $message = $mailer->createMessage()
           ->setSubject($subject)
           ->setFrom($sender)
           ->setTo($recipient)
           ->setBody($body, 'text/html');
+      if ($bcc) {
+        $message->setBcc($bcc);
+      }
       $mailer->send($message);
     }
 }
