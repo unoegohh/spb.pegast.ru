@@ -31,12 +31,18 @@ team:
 # travel planner
 travel_planner:
     pattern:  /travel-planner
-    defaults: { _controller: WebsiteStaticBundle:TravelPlanner:index }
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: travel-planner }
     requirements:
         _method: GET
 
-travel_planner_submit:
-    pattern:  /travel-planner
-    defaults: { _controller: WebsiteStaticBundle:TravelPlanner:submit }
-    requirements:
-        _method: POST
+#travel_planner:
+#    pattern:  /travel-planner
+#    defaults: { _controller: WebsiteStaticBundle:TravelPlanner:index }
+#    requirements:
+#        _method: GET
+#
+#travel_planner_submit:
+#    pattern:  /travel-planner
+#    defaults: { _controller: WebsiteStaticBundle:TravelPlanner:submit }
+#    requirements:
+#        _method: POST
