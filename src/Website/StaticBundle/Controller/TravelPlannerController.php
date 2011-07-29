@@ -43,7 +43,13 @@ class TravelPlannerController extends Controller
         ($this->container->getParameter('website.static.travel_planner.send_mail.recipient.bcc.email') ?: ''),
         $this->container->getParameter('website.static.travel_planner.send_mail.subject'),
         $this->renderView('WebsiteStaticBundle:TravelPlanner:mail.html.twig', array(
-          'data' => array_merge($data, array('office' => $office[0]->__toString(), 'age' => $this->getRequest()->request->get('age'))),
+          'data' => array_merge(
+            $data,
+            array(
+              'office' => $office[0]->__toString(),
+              'age' => $this->getRequest()->request->get('age')
+            )
+          ),
           'sended' => null
         ))
       );
