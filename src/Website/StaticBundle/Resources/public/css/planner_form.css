@@ -49,3 +49,12 @@ form#plannerForm div#otherLabel {
 form#plannerForm input#other {
   margin-bottom: 5px;
 }
+
+div#childrenAge {
+  margin-left: 200px;
+  padding-bottom: 5px;
+}
+
+input.age {
+  width: 25px !important;
+}

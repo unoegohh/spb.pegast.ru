@@ -205,7 +205,7 @@ class Office
       }
       else {
         $metroArray = preg_split('/,\s*/', $this->metro);
-        return $metroArray[0];
+        return 'м. ' . $metroArray[0];
       }
     }
 }

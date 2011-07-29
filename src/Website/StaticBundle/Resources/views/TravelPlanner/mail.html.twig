@@ -64,7 +64,12 @@
       </tr>
       <tr>
         <td>{{ "travel_planner.labels.children" | trans({}, "WebsiteStaticBundle") }}</td>
-        <td>{{ data.children }}</td>
+        <td>{{ data.children }}
+          {% if data.age|length > 0 %}
+            <br>возраст детей:
+            {% for number in data.age %}{{ number }}{% if not loop.last %}, {% endif %}{% endfor %}
+          {% endif %}
+        </td>
       </tr>
 {% if data.office is not empty %}
       <tr>

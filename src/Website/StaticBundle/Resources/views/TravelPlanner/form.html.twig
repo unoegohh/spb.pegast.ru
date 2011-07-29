@@ -19,6 +19,39 @@
         $(this).focus();
       }
     });
+    $('select.city').trigger('change');
+
+    $('select.children').change(function() {
+      if ($(this).val() == '0') {
+        $('input[id^=age_]').remove();
+        $('div#childrenAge').hide();
+      }
+      else {
+        if ($('input[id^=age_]').length == 0) {
+          $('div#childrenAge').show();
+          for (var i = 1; i <= $(this).val(); i++) {
+            insertNode(i);
+          }
+        }
+        else
+          if ($('input[id^=age_]').length > $(this).val()) {
+            for (var i = $('input[id^=age_]').length; i > $(this).val(); i--) {
+              $('input[id=age_'+i+']').remove();
+            }
+          }
+          else
+            if ($('input[id^=age_]').length < $(this).val()) {
+              for (var i = $('input[id^=age_]').length + 1; i <= $(this).val(); i++) {
+                insertNode(i);
+              }
+            }
+      }
+
+      function insertNode(i) {
+        $('div#childrenAge').append($('<input/>').attr({'id': 'age_'+i, 'class': 'age', 'name': "age\[\]", 'maxlength': 2}));
+      }
+    });
+    $('select.children').trigger('change');
   });
 </script>
 {% endblock %}
@@ -26,6 +59,11 @@
 {% block title %}Подбор тура{% endblock %}
 
 {% form_theme form _self %}
+
+{% block _travel_planner_children_widget %}
+  {{ block('choice_widget') }}
+  <div id="childrenAge" class="hidden">возраст детей<br></div>
+{% endblock %}
 
 {% block _travel_planner_cityOther_row %}
   <div id="otherLabel" class="hidden">
@@ -63,7 +101,7 @@
       {{ form_row(form.nightsMin, { 'attr': {'class': 'min'} }) }}
       {{ form_row(form.nightsMax, { 'attr': {'class': 'min'} }) }}
       {{ form_row(form.adult, { 'attr': {'class': 'min'} }) }}
-      {{ form_row(form.children, { 'attr': {'class': 'min'} }) }}
+      {{ form_row(form.children, { 'attr': {'class': 'min children'} }) }}
       {{ form_row(form.office) }}
       {{ form_row(form.name) }}
       {{ form_row(form.phone) }}
