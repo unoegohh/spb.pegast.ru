@@ -27,7 +27,7 @@ admin:
             roles: Роли
 
 link_staticpage_list: Список разделов
-# link_static_create: Создать раздел
+link_staticpage_create: Создать раздел
 link_staticpage_edit: Редактировать раздел
 link_staticpage_view: Просмотреть раздел
 

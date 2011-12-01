@@ -35,9 +35,8 @@ class StaticAdmin extends Admin
       $translator = $this->getTranslator();
       $translatorDomain = $this->getTranslationDomain();
 
-      $form->add('route', array('read_only' => true), array(
-        'name' => $translator->trans('admin.labels.route', array(), $translatorDomain)//,
-//        'type' => 'string'
+      $form->add('route', $this->getSubject() === false ? array() : array('read_only' => true), array(
+        'name' => $translator->trans('admin.labels.route', array(), $translatorDomain)
       ));
       $form->add('title', array(), array(
         'name' => $translator->trans('admin.labels.title', array(), $translatorDomain)

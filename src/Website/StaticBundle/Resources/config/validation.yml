@@ -1,0 +1,8 @@
+Website\StaticBundle\Entity\StaticPage:
+    properties:
+        route:
+            - NotBlank: ~
+        title:
+            - NotBlank: ~
+        content:
+            - NotBlank: ~

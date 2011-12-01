@@ -31,8 +31,9 @@ twig:
 assetic:
     debug:          %kernel.debug%
     use_controller: true
-    filters:
-        cssrewrite: ~
+    write_to: %kernel.root_dir%/../web/assets
+#    filters:
+#        cssrewrite: ~
         # closure:
         #     jar: %kernel.root_dir%/java/compiler.jar
         # yui_css:
@@ -40,11 +41,12 @@ assetic:
     assets:
         all_css:
             inputs:
+                - css/*.css
                 - bundles/websitestatic/css/*.css
                 - bundles/websitestatic/css/redmond/*.css
         all_js:
             inputs:
-# commented while unable to dump files with params                - http://maps.google.com/maps/api/js?sensor=false&language=%locale%&key=%google_maps_api_key%
+                - js/*.js
                 - js/jquery/jquery-1.6.2.min.js
                 - bundles/websitestatic/js/*.js
                 - bundles/websitenews/js/*.js

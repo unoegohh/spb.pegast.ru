@@ -51,39 +51,12 @@
       <div class="grid_12 blue line3px"></div>
       <!-- END: site header -->
       <!-- START: content -->
-      <div class="grid_12 sky">
-        <div class="grid_3">
-          <!-- START: menu -->
-          <div class="menu">
-            {% block menu %}{% render "WebsiteStaticBundle:Static:menu" %}{% endblock %}
-          </div>
-          <!-- END: menu -->
-          <!-- START: news -->
-          <div class="news">
-            {% block last_news %}{% render "WebsiteNewsBundle:News:last" with {'quantity': 3} %}{% endblock %}
-          </div>
-          <!-- END: news -->
-          <!-- START: currancy rate -->
-          <div class="currency">
-            {% render "WebsiteStaticBundle:Static:currencyRate" %}
-          </div>
-          <!-- END: currancy rate -->
-          <!-- START: paycard -->
-          <div class="blue_button">
-            <span class="paycard">
-              <i class="card_mc"></i>
-              <i class="card_visa"></i>
-              <span>Оплата картами</span>
-            </span>
-          </div>
-          <!-- END: paycard -->
-        </div>
-        <div class="grid_9 alpha omega white">
-          <div class="grid_6 alpha content_main">
+      <div class="grid_12 white">
+        <div class="grid_9 alpha">
             <!-- START: main content -->
             {% block content %}{% endblock %}
             <!-- END: main content -->
-          </div>
+        </div>
           <div class="grid_3 omega">
             <!-- START: offices -->
             <div class="office">
@@ -92,7 +65,6 @@
             <!-- END: offices -->
             <a href="{{ path('team') }}" class="blue_button">Наша команда</a>
           </div>
-        </div>
       </div>
       <!-- END: content -->
       <!-- START: footer -->

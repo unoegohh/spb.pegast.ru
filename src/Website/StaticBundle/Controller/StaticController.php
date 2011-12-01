@@ -34,7 +34,7 @@ class StaticController extends Controller
     $menu->addChild('О компании', $this->generateUrl('about'));
     $menu->addChild('Подбор тура', $this->generateUrl('travel_planner'));
     $menu->addChild('Полезная информация', $this->generateUrl('info'));
-    $menu->addChild('Погода на курортах', $this->generateUrl('weather'));
+    $menu->addChild('Туры в рассрочку', $this->generateUrl('tours_in_credit'));
     return $this->render('WebsiteStaticBundle:Static:menu.html.twig', array('menu' => $menu->toArray()));
   }
 

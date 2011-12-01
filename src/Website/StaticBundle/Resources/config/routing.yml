@@ -18,6 +18,11 @@ info:
     pattern:  /info
     defaults: { _controller: WebsiteStaticBundle:Static:static, name: info }
 
+# tours in credit
+tours_in_credit:
+    pattern:  /tours-in-credit
+    defaults: { _controller: WebsiteStaticBundle:Static:static, name: tours-in-credit }
+
 # weather@resorts
 weather:
     pattern:  /weather
