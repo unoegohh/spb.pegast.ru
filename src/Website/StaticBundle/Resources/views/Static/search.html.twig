@@ -1,7 +1,9 @@
-{% extends "::base_search.html.twig" %}
+{% extends "::base.html.twig" %}
 
 {% block title %}Поиск тура{% endblock %}
 
-{% block content %}
-<iframe width="100%" height="1300" frameborder="0" scrolling="no" src="http://pegasretail.ru/franchise/spb.pegast.ru/index.php?{% if query_string %}{{ query_string }}{% else %}TOWNFROMINC=51&STATEINC=4{% endif %}"></iframe>
+{% block content_main %}
+<div class="grid_9 alpha">
+    <iframe width="100%" height="1300" frameborder="0" scrolling="no" src="http://pegasretail.ru/franchise/spb.pegast.ru/index.php?{% if query_string %}{{ query_string }}{% else %}TOWNFROMINC=51&STATEINC=4{% endif %}"></iframe>
+</div>
 {% endblock %}
