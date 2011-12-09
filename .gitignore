@@ -1,5 +1,6 @@
 
 .idea
+watch.bat
 
 app/bootstrap*
 app/cache/*

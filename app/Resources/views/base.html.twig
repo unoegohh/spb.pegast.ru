@@ -56,7 +56,7 @@
         {% block content_main %}
         <div class="grid_9 alpha sky">
 
-            <div class="grid_3 alpha content_left">
+            <div id="content-left" class="grid_3 alpha content_left">
               <!-- START: menu -->
               <div class="menu">
                 {% block menu %}{% render "WebsiteStaticBundle:Static:menu" %}{% endblock %}
@@ -83,7 +83,7 @@
               <!-- END: paycard -->
             </div>
 
-          <div class="grid_6 omega content_main white">
+          <div id="content-main" class="grid_6 omega content_main white">
             <!-- START: main content -->
             {% block content %}{% endblock %}
             <!-- END: main content -->
@@ -92,7 +92,7 @@
         </div>
         {% endblock %}
 
-          <div class="grid_3 omega">
+          <div id="content-right" class="grid_3 omega">
             <!-- START: offices -->
             <div class="office">
               {% block offices %}{% render "WebsiteOfficeBundle:Office:shortList" %}{% endblock %}

@@ -46,8 +46,8 @@ assetic:
                 - bundles/websitestatic/css/redmond/*.css
         all_js:
             inputs:
-                - js/*.js
                 - js/jquery/jquery-1.6.2.min.js
+                - js/*.js
                 - bundles/websitestatic/js/*.js
                 - bundles/websitenews/js/*.js
                 - bundles/websiteoffice/js/*.js
