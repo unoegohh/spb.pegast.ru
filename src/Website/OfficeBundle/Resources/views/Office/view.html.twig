@@ -1,7 +1,7 @@
 {% extends "::content.html.twig" %}
 
 {% block javascripts %}
-<script type="text/javascript" src="{{ asset("http://maps.google.com/maps/api/js?sensor=false&language=ru&key=ABQIAAAA6zdkkrf1O_M1nLgQnpyn-RRSTOoN6KZtHFcNg8gxFhX4HJtrgxTziKD3POVBoG0N2X21kRx9JgGiyA") }}"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ru&key={{api_key}}"></script>
 {% endblock %}
 
 {% block title %}Прямые офисы продаж{% endblock %}
