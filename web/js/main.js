@@ -13,5 +13,5 @@ $(function(){
 
     var maxHeight = Math.max(leftHeight, mainHeight, rightHeight);
 
-    $('div#content-left,div#content-main,div#content-right').height(maxHeight);
+    //$('div#content-left,div#content-main,div#content-right').height(maxHeight);
 });
